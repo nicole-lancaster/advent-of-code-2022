@@ -7,6 +7,6 @@ describe("parseCalories function", () => {
         // act
         parseCalories()
         // assert
-        expect(inputData: Number).toBe()
+        // expect(inputData: Number).toBe()
     })
 })

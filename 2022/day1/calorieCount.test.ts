@@ -5,6 +5,6 @@ describe("readInputFile function", () => {
         const caloriesArray = [1, 2, 3, "", 3, 3, 3, 4, "", 2, 1, 555];
         // act
         // assert
-        expect(inputData: Number).toBe()
+        // expect(inputData: Number).toBe()
     })
 })

@@ -1,7 +1,6 @@
-import { parseCalories } from "./parseCalories";
 import { Calories } from "./types/calories";
 
-function calorieCount(calories: Calories[]) {
+export function countCalories(calories: Calories[]) {
   let currentCalorieCount = 0;
   let maxCalories = 0;
   for (let i = 0; i < calories.length; i++) {
@@ -19,4 +18,3 @@ function calorieCount(calories: Calories[]) {
   return maxCalories;
 }
 
-calorieCount();
