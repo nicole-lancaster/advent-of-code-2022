@@ -17,4 +17,3 @@ export function countCalories(calories: Calories[]) {
   console.log(maxCalories);
   return maxCalories;
 }
-

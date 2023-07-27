@@ -1,11 +1,11 @@
 const fs = require("fs");
 
-export const parseCalories = () => {
+export const parseCalories = (inputDataFile: string) => {
   try {
     const inputData = fs
-      .readFileSync(`${__dirname}/input.txt`, "utf-8")
+      .readFileSync(`${__dirname}/${inputDataFile}`, "utf-8")
       .toString();
-      console.log(inputData)
+    console.log(inputData);
     const numbersList = inputData.split(/\r?/);
     const caloriesArray = numbersList.map((number: string) => {
       if (number === "") {

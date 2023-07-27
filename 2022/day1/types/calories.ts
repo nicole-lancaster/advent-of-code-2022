@@ -1,1 +1,1 @@
-export type Calories =  string | number
+export type Calories = number[];
