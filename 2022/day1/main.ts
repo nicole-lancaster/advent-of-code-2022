@@ -1,6 +1,8 @@
 import { countCalories } from "./calorieCount";
 import { parseCalories } from "./parseCalories";
 
-const caloriesArray = parseCalories();
+const inputDataFile = "input.txt";
 
-const countCalorie = countCalories(caloriesArray);
+const caloriesArray = parseCalories(inputDataFile);
+
+const calorieCount = countCalories(caloriesArray);
