@@ -5,5 +5,5 @@ describe("readInputFile function", () => {
     // act
     // assert
     // expect(inputData: Number).toBe()
-  });
+  });3
 });

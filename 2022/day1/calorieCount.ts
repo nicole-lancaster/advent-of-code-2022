@@ -1,19 +1,18 @@
-import { Calories } from "./types/calories";
+import { CaloriesPerElf } from "./types/caloriesPerElf";
 
-export function countCalories(calories: Calories[]) {
+export function countCalories(caloriesPerElf: CaloriesPerElf) {
   let currentCalorieCount = 0;
   let maxCalories = 0;
-  for (let i = 0; i < calories.length; i++) {
-    if (typeof calories[i] === "number") {
-      currentCalorieCount += calories[i];
-    } else {
-      if (currentCalorieCount > maxCalories) {
-        maxCalories = currentCalorieCount;
-      }
-      currentCalorieCount = 0;
-      console.log("here -->", maxCalories);
+
+  caloriesPerElf.forEach((elf) => {
+    elf.forEach((calories) => {
+      currentCalorieCount += calories;
+    });
+
+    if (currentCalorieCount > maxCalories) {
+      maxCalories = currentCalorieCount;
     }
-  }
-  console.log(maxCalories);
+    currentCalorieCount = 0;
+  });
   return maxCalories;
 }
