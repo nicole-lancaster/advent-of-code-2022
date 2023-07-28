@@ -4,7 +4,7 @@
   "description": "",
   "main": "calorie-counting.ts",
   "scripts": {
-    "test": "jest",
+    "test": "jest --coverage",
     "start": "ts-node",
     "format": "prettier -w ."
   },
