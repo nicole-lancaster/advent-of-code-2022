@@ -13,6 +13,8 @@ describe("countCalories function", () => {
     // act
     const output = countAllCaloriesAndSort(input);
     // assert
-    expect(output).toEqual([10, 13, 558]);
+    expect(output).toBeInstanceOf(Array);
+    expect(output).toHaveLength(5);
+    expect(output).toEqual([6, 9, 10, 13, 558]);
   });
 });
