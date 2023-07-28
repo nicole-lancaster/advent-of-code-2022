@@ -1,6 +1,6 @@
 import { parseEncodedMoves } from "./parseEncodedMoves";
 
-describe.only("parseInputs function", () => {
+describe("parseInputs function", () => {
   test("should successfully read input file and parse data", () => {
     const testFile = "mocks/test-input.txt";
     const output = parseEncodedMoves(testFile);
