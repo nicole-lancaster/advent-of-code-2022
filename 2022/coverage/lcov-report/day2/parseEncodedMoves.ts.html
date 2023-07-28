@@ -1,15 +1,15 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <title>Code coverage report for parseCalories.ts</title>
+    <title>Code coverage report for day2/parseEncodedMoves.ts</title>
     <meta charset="utf-8" />
-    <link rel="stylesheet" href="prettify.css" />
-    <link rel="stylesheet" href="base.css" />
-    <link rel="shortcut icon" type="image/x-icon" href="favicon.png" />
+    <link rel="stylesheet" href="../prettify.css" />
+    <link rel="stylesheet" href="../base.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="../favicon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <style type="text/css">
       .coverage-summary .sorter {
-        background-image: url(sort-arrow-sprite.png);
+        background-image: url(../sort-arrow-sprite.png);
       }
     </style>
   </head>
@@ -17,12 +17,15 @@
   <body>
     <div class="wrapper">
       <div class="pad1">
-        <h1><a href="index.html">All files</a> parseCalories.ts</h1>
+        <h1>
+          <a href="../index.html">All files</a> /
+          <a href="index.html">day2</a> parseEncodedMoves.ts
+        </h1>
         <div class="clearfix">
           <div class="fl pad1y space-right2">
             <span class="strong">100% </span>
             <span class="quiet">Statements</span>
-            <span class="fraction">8/8</span>
+            <span class="fraction">6/6</span>
           </div>
 
           <div class="fl pad1y space-right2">
@@ -34,7 +37,7 @@
           <div class="fl pad1y space-right2">
             <span class="strong">100% </span>
             <span class="quiet">Functions</span>
-            <span class="fraction">4/4</span>
+            <span class="fraction">2/2</span>
           </div>
 
           <div class="fl pad1y space-right2">
@@ -70,33 +73,36 @@
 <a name='L12'></a><a href='#L12'>12</a>
 <a name='L13'></a><a href='#L13'>13</a>
 <a name='L14'></a><a href='#L14'>14</a>
-<a name='L15'></a><a href='#L15'>15</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<a name='L15'></a><a href='#L15'>15</a>
+<a name='L16'></a><a href='#L16'>16</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">3x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">10x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">5x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import fs from "fs";
 &nbsp;
-export const parseCalories = (inputDataFile: string): number[][] =&gt; {
-  const inputData = fs
-    .readFileSync(`${__dirname}/${inputDataFile}`, "utf-8")
-    .toString();
-&nbsp;
-  const groups = inputData.split("\n\n");
-  const parsedCalories = groups.map((rawGroup) =&gt; rawGroup.split("\n"));
-&nbsp;
-  return parsedCalories.map((caloriesArray) =&gt;
-    caloriesArray.map((calories) =&gt; parseInt(calories)),
+export const parseEncodedMoves = (inputDataFile: string) =&gt; {
+  const parsedData = fs.readFileSync(
+    `${__dirname}/${inputDataFile}`,
+    "utf-8"
   );
+&nbsp;
+  const pairsOfMoves = parsedData.split("\n");
+  const splitPairs = pairsOfMoves.map((pair) =&gt; {
+    return pair.split("\n");
+  });
+&nbsp;
+  return splitPairs;
 };
 &nbsp;</pre></td></tr></table></pre>
 
@@ -112,15 +118,15 @@ export const parseCalories = (inputDataFile: string): number[][] =&gt; {
         rel="noopener noreferrer"
         >istanbul</a
       >
-      at 2023-07-28T09:00:51.697Z
+      at 2023-07-28T10:31:11.149Z
     </div>
-    <script src="prettify.js"></script>
+    <script src="../prettify.js"></script>
     <script>
       window.onload = function () {
         prettyPrint();
       };
     </script>
-    <script src="sorter.js"></script>
-    <script src="block-navigation.js"></script>
+    <script src="../sorter.js"></script>
+    <script src="../block-navigation.js"></script>
   </body>
 </html>
