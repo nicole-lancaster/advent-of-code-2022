@@ -1,4 +1,4 @@
-export function countHighestThreeCalories(sortedSumOfEachElf: number[]) {
+export function sumHighestThreeCalories(sortedSumOfEachElf: number[]) {
   let currentSum: number = 0;
 
   const threeHighestKcals: number[] = sortedSumOfEachElf.slice(-3);
@@ -6,5 +6,5 @@ export function countHighestThreeCalories(sortedSumOfEachElf: number[]) {
     currentSum += elf;
   });
 
-  return threeHighestKcals;
+  return currentSum;
 }
