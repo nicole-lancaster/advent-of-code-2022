@@ -1,4 +1,4 @@
-export const countScoreFromPairs = (parsedData: string[][]) => {
+export const countScoresForPart1Strategy = (parsedData: string[][]) => {
   const moveAndScorePairs: any = {
     "A X": 4,
     "A Y": 8,
