@@ -1,4 +1,4 @@
-import { countCaloriesOfTopThreeElves } from "./calorieCountTopThree";
+import { countAllCaloriesAndSort } from "./countAllCaloriesAndSort";
 
 describe("countCalories function", () => {
   test("should return an array of the greatest top three numbers when each sub array is summed", () => {
@@ -11,7 +11,7 @@ describe("countCalories function", () => {
       [9, 1],
     ];
     // act
-    const output = countCaloriesOfTopThreeElves(input);
+    const output = countAllCaloriesAndSort(input);
     // assert
     expect(output).toEqual([10, 13, 558]);
   });

@@ -1,8 +1,14 @@
-import { countCaloriesOfTopThreeElves } from "./calorieCountTopThree";
+import { countMaxCalories } from "./calorieCountMax";
+import { countAllCaloriesAndSort } from "./countAllCaloriesAndSort";
+import { countHighestThreeCalories } from "./highestThreeCalories";
 import { parseCalories } from "./parseCalories";
 
 const inputDataFile = "input.txt";
 
 const caloriesArray = parseCalories(inputDataFile);
 
-const calorieCount = countCaloriesOfTopThreeElves(caloriesArray);
+const calorieCount = countAllCaloriesAndSort(caloriesArray);
+
+const highestThreeCalories = countHighestThreeCalories(calorieCount);
+
+const maxCalories = countMaxCalories(highestThreeCalories);

@@ -1,1 +1,3 @@
-export function countMaxCalories() {}
+export function countMaxCalories(threeHighestKcals: number[]) {
+  return threeHighestKcals.slice(-1)[0];
+}
