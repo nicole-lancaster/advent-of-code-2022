@@ -1,16 +1,12 @@
-import { countAllCaloriesAndSort } from "./countAllCaloriesAndSort";
+import { countMaxCalories } from "./calorieCountMax";
 
 describe("countMaxCalories function", () => {
   test("should return the greatest number when each sub array is summed", () => {
     // arrange
-    const input = [
-      [1, 2, 3],
-      [3, 3, 3, 4],
-      [2, 1, 555],
-    ];
+    const input = [3, 5, 32];
     // act
-    const output = countAllCaloriesAndSort(input);
+    const output = countMaxCalories(input);
     // assert
-    expect(output).toEqual(558);
+    expect(output).toEqual(32);
   });
 });
