@@ -1,9 +1,9 @@
-import { parseScrambledRucksack } from "./rucksackReorganisation";
+import { parseScrambledRucksacks } from "./parseScrambledRucksacks";
 
-describe("rucksackReorganisation function", () => {
+describe("parseScrambledRucksacks function", () => {
   test("should successfully read input file and parse data", () => {
     const testFile = "mocks/test-input.txt";
-    const output = parseScrambledRucksack(testFile);
+    const output = parseScrambledRucksacks(testFile);
     expect(output).toEqual([
       [
         ["J", "p", "g", "W"],

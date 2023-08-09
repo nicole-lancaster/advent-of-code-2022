@@ -1,6 +1,6 @@
 import fs from "fs";
 
-export const parseScrambledRucksack = (inputDataFile: string) => {
+export const parseScrambledRucksacks = (inputDataFile: string) => {
   const parsedData = fs.readFileSync(`${__dirname}/${inputDataFile}`, "utf-8");
 
   const rucksacks = parsedData.split("\n");

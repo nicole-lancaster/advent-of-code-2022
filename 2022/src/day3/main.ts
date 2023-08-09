@@ -1,5 +1,5 @@
-import { parseScrambledRucksack } from "./rucksackReorganisation";
+import { parseScrambledRucksacks as parseScrambledRucksacks } from "./parseScrambledRucksacks";
 
 export const inputDataFile = "input.txt";
 
-const parsedData = parseScrambledRucksack(inputDataFile);
+const parsedData = parseScrambledRucksacks(inputDataFile);
