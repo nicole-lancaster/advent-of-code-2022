@@ -6,7 +6,10 @@
   "scripts": {
     "test": "jest",
     "start": "ts-node",
-    "format": "prettier -w ."
+    "format": "prettier -w .",
+    "day3": "npm run day3:p1 && npm run day3:p2",
+    "day3:p1": "npm start src/day3/part-1.ts",
+    "day3:p2": "npm start src/day3/part-2.ts"
   },
   "keywords": [
     "aoc, advent-of-code, adventofcode, aoc2022, advent-of-code-2022"
