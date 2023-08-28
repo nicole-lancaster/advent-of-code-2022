@@ -22,32 +22,33 @@ If you would like to clone this repo onto your local machine follow these steps:
 
 ## Progress
 
-Day	Challenge Name	Stars
-1	Calorie Counting	⭐⭐
-2	Rock Paper Scissors	⭐⭐
-3	Rucksack Reorganization	⭐
-4	Camp Cleanup	⭐⭐
-5	
-6	
-7		
-8		
-9		
-10		
-11		
-12		
-13		
-14		
-15		
-16		
-17		
-18		
-19		
-20		
-21		
-22		
-23		
-24		
-25		
+| Day | Challenge Name          | Stars |
+| --- | ----------------------- | ----- |
+| 1   | Calorie Counting        | ⭐⭐  |
+| 2   | Rock Paper Scissors     | ⭐⭐  |
+| 3   | Rucksack Reorganization | ⭐    |
+| 4   | Camp Cleanup            | ⭐⭐  |
+| 5   |                         |       |
+| 6   |                         |       |
+| 7   |                         |       |
+| 8   |                         |       |
+| 9   |                         |       |
+| 10  |                         |       |
+| 11  |                         |       |
+| 12  |                         |       |
+| 13  |                         |       |
+| 14  |                         |       |
+| 15  |                         |       |
+| 16  |                         |       |
+| 17  |                         |       |
+| 18  |                         |       |
+| 19  |                         |       |
+| 20  |                         |       |
+| 21  |                         |       |
+| 22  |                         |       |
+| 23  |                         |       |
+| 24  |                         |       |
+| 25  |                         |       |
 
  ## Future plans ✅
 
