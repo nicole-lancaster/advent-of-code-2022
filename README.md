@@ -26,8 +26,11 @@ Node
 
  To reveal the solutions to each challenge, you will find this at the end of each 1.main.ts file for each day:
 
- `// console.log(\`Part 1 solution: ${part1Solution}\`);`
- `// console.log(\`Part 2 solution: ${part2Solution}\`);`
+``` 
+// console.log(\`Part 1 solution: ${part1Solution}\`);
+// console.log(\`Part 2 solution: ${part2Solution}\`);
+```
+
 
  uncomment these out and run the following command:
 
