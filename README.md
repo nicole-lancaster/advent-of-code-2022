@@ -11,14 +11,30 @@ Other than just solving the problem to get the correct solution, I have also...
 - followed the 'single responsibility principle' by keeping each function small and have a specific purpose
 - written unit tests using Jest
 
-## Setup/installation ⚙️ 
+## Running locally ⚙️ 
 
-If you would like to clone this repo onto your local machine follow these steps:
+### Pre-requisites
+Node installed
 
-1. create a repository that you would like to contain this code and cd into it, if you haven't already
-2. in your terminal, run the command `git clone https://github.com/nicole-lancaster/advent-of-code-2022.git`
-3. make sure you have Node installed to run the files
-4. run `npm install` to install all depnendencies needed to run this project
+`git clone https://github.com/nicole-lancaster/advent-of-code-2022.git`
+ open repo in your IDE of choice and then cd into 2022 --> advent-of-code-2022/2022
+ npm install
+
+ ### To run the challenges with ts node
+
+ To reveal the solutions to each challenge, you will find this at the end of each 1.main.ts ile for each day:
+
+ // console.log(`Part 1 solution: ${part1Solution}`);
+ // console.log(`Part 2 solution: ${part2Solution}`);
+
+ uncomment these out and run the following command:
+
+  `npm start src/day<X>/1.main.ts` - replacing the <X> with the day you would like (see progress section below for current days completed!)
+
+ ### to run the tests with Jest
+ 
+ `npm test` to run full test suite
+ 
 
 ## Progress
 
