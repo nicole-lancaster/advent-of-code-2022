@@ -14,18 +14,18 @@ Other than just solving the problem to get the correct solution, I have also...
 ## Running locally ⚙️ 
 
 ### Pre-requisites
-Node installed
+Node
 
-`git clone https://github.com/nicole-lancaster/advent-of-code-2022.git`
- open repo in your IDE of choice and then cd into 2022 --> advent-of-code-2022/2022
+`git clone https://github.com/nicole-lancaster/advent-of-code-2022.git`\n
+ open repo in your IDE of choice and then cd into 2022 --> advent-of-code-2022/2022\n
  npm install
 
  ### To run the challenges with ts node
 
  To reveal the solutions to each challenge, you will find this at the end of each 1.main.ts ile for each day:
 
- // console.log(`Part 1 solution: ${part1Solution}`);
- // console.log(`Part 2 solution: ${part2Solution}`);
+ `// console.log(`Part 1 solution: ${part1Solution}`);`
+ `// console.log(`Part 2 solution: ${part2Solution}`);`
 
  uncomment these out and run the following command:
 
