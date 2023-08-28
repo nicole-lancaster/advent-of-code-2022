@@ -16,8 +16,10 @@ Other than just solving the problem to get the correct solution, I have also...
 ### Pre-requisites
 Node
 
-`git clone https://github.com/nicole-lancaster/advent-of-code-2022.git`\n
- open repo in your IDE of choice and then cd into 2022 --> advent-of-code-2022/2022\n
+`git clone https://github.com/nicole-lancaster/advent-of-code-2022.git`
+ 
+ open repo in your IDE of choice and then cd into 2022 --> advent-of-code-2022/2022
+ 
  npm install
 
  ### To run the challenges with ts node
